@@ -3,9 +3,9 @@ Fakturant automates the process of invoicing by calculating the relevant fields 
 minimal set of input data.
 
 ### Dependencies
-googletest - for unit testing
-wxwidgets - for the GUI
-cairo - for generating PDF files
+- googletest - for unit testing
+- wxwidgets - for the GUI
+- cairo - for generating PDF files
 
 ### License
 Fakturant is available under the MIT license.
