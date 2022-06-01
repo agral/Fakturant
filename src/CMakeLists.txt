@@ -1,0 +1,8 @@
+set(BINARY_NAME ${CMAKE_PROJECT_NAME})
+file(GLOB_RECURSE SRC_SOURCES LIST_DIRECTORIES true
+  *.hpp
+  *.cpp
+)
+set(SOURCES ${SRC_SOURCES})
+add_executable(${BINARY_NAME} ${SOURCES})
+add_library(lib_${BINARY_NAME} STATIC ${SOURCES})
