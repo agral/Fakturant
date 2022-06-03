@@ -1,3 +1,6 @@
 [submodule "lib/googletest"]
 	path = lib/googletest
 	url = git@github.com:google/googletest.git
+[submodule "lib/wxWidgets/wxWidgets"]
+	path = lib/wxWidgets/wxWidgets
+	url = https://github.com/wxWidgets/wxWidgets
