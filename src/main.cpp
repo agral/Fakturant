@@ -2,7 +2,9 @@
 
 #include <wx/wx.h>
 
+#include "gui/frame/Main.hpp"
 #include "Util.hpp"
+
 
 class GuiFakturantApp: public wxApp
 {
@@ -10,32 +12,11 @@ class GuiFakturantApp: public wxApp
   virtual bool OnInit();
 };
 
-class GuiFrameMain: public wxFrame
-{
- public:
-  GuiFrameMain(const wxString& title, const wxPoint& pos, const wxSize& size);
-
- private:
-  void OnExit(wxCommandEvent& event);
-};
-
 bool GuiFakturantApp::OnInit()
 {
-  GuiFrameMain* frame = new GuiFrameMain("Fakturant", wxPoint(50, 50), wxSize(1200, 960));
+  gui::frame::Main* frame = new gui::frame::Main("Fakturant", wxPoint(50, 50), wxSize(1200, 960));
   frame->Show(true);
   return true;
-}
-
-GuiFrameMain::GuiFrameMain(const wxString& title, const wxPoint& pos, const wxSize& size)
-: wxFrame(nullptr, wxID_ANY, title, pos, size)
-{
-  CreateStatusBar();
-  SetStatusText("Witaj w programie Fakturant");
-}
-
-void GuiFrameMain::OnExit(wxCommandEvent& event)
-{
-  Close(true);
 }
 
 // a macro that provides a main() method:
