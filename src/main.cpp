@@ -3,8 +3,6 @@
 #include <wx/wx.h>
 
 #include "gui/frame/Main.hpp"
-#include "Util.hpp"
-
 
 class GuiFakturantApp: public wxApp
 {
