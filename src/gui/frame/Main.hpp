@@ -11,7 +11,7 @@ class Main : public wxFrame
   Main(const wxString& title, const wxPoint& pos, const wxSize& size);
 
  private:
-  void OnExit(wxCommandEvent& event);
+  void OnExit(wxCommandEvent&);
 };
 
 } // namespace gui::frame

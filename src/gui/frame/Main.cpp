@@ -10,7 +10,7 @@ Main::Main(const wxString& title, const wxPoint& pos, const wxSize& size)
   SetStatusText("Witaj w programie Fakturant!");
 }
 
-void Main::OnExit(wxCommandEvent& event)
+void Main::OnExit(wxCommandEvent&)
 {
   Close(true);
 }
