@@ -12,6 +12,8 @@ class Main : public wxFrame
 
  private:
   void OnExit(wxCommandEvent&);
+  wxPanel *m_pnlMain;
+  wxButton *m_btnQuit;
 };
 
 } // namespace gui::frame
